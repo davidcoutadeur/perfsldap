@@ -323,7 +323,7 @@ int main( int argc, char *argv[] )
 
     /* affet LDAP password */
     cred.bv_val = root_pw;
-    cred.bv_len = sizeof( root_pw );
+    cred.bv_len = strlen( root_pw );
 
     /* declare array of LDAP search parameters (threads included) */
     search_t searches[nb_threads];
